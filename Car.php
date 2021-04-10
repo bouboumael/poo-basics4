@@ -32,9 +32,9 @@ class Car extends Vehicle
             }
         } catch (Exception $e) {
             echo $e->getMessage();
-        } finally {
             $this->setHasParkBrake();
             echo "The handbrake is off<br>";
+        } finally {
             echo "Homer says: My car rolls like a donut";
             return parent::start();
         }
